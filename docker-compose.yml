@@ -1,13 +1,28 @@
-version: '3.8'
-services:
-  server:
-    build:
+44987645876543216321` 1q   
+
+        - ./app/.env
+        - 5432:5432
+        - postgres_data:/var/lib/postgresql/data/
+      - ./app/.env
+      - ./app/:/app/
+      - 8000:8000
+      - db
       context: ./app
       dockerfile: Dockerfile
-    volumes:
-      - ./app/:/app/
+      env_file:
+      image: postgres:13-alpine
+      ports:
+      volumes:
+    build:
     command: uvicorn api.server:app --reload --workers 1 --host 0.0.0.0 --port 8000
+    depends_on:
     env_file:
-      - ./app/.env
     ports:
-      - 8000:8000
+    volumes:
+  -*
+  db:
+  server:
+/version: '3.8'
+]=[poikuhfd raetyui9o0-p+-/*]-  postgres_data:
+services:
+volumes: 
